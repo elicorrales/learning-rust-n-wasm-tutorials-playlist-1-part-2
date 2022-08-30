@@ -42,7 +42,7 @@ pub fn say_hello() {
 }
 ```
   
-Save, exti.  
+Save, exit.  
   
 Next, edit ```Cargo.toml```.  
    
