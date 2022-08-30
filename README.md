@@ -34,5 +34,24 @@ Let's make changes to the ```lib``` project.
 Change to that directory, and edit ```src/lib.rs```.  
   
 Remove **everything**.  
-
+  
+Add the following:  
+```
+pub fn say_hello() {
+    println!("Hello World!");
+}
+```
+  
+Save, exti.  
+  
+Next, edit ```Cargo.toml```.  
+   
+Add the following new section:  
+```
+[lib]
+crate-type = ["cdylib", "lib"]
+```
+  
+Save, exit.  
+  
 
