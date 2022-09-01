@@ -1,4 +1,4 @@
 #[no_mangle]
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+pub fn say_hello() {
+    println!("Hello World!");
 }

@@ -21,12 +21,12 @@ In your software projects directory, possibly create a sub-directory, for exampl
 mkdir -p ~/SwDev/rust/wasm
 ```
   
-Change to that directory, then create a Rust bin project:  
+#### Change to that directory, then create a Rust bin project:  
 ```
 cargo new my-first-wasm-bin --bin --vcs none
 ```
   
-Then create a Rust lib project:  
+#### Then create a Rust lib project:  
 ```
 cargo new my-first-wasm-lib --lib --vcs none
 ```
@@ -60,7 +60,7 @@ Save, exit.
   
 ## Build ```bin``` Project  
 
-Go to the ```bin``` project directory, and do normal build/run:
+#### Go to the ```bin``` project directory, and do normal build/run:
 ```
 cargo run --release
 ```
@@ -71,7 +71,7 @@ cargo run --release
 Hello, world!
 ```
   
-Now let's do a ```wasm32-unknown-unknown``` build:
+#### Now let's do a ```wasm32-unknown-unknown``` build:
 ```
 cargo build --target wasm32-unknown-unknown --release
 ```
@@ -80,7 +80,7 @@ cargo build --target wasm32-unknown-unknown --release
     Finished release [optimized] target(s) in 0.32s
 ```
   
-Now let's instead do a ```wasm32-wasi``` build:
+#### Now let's instead do a ```wasm32-wasi``` build:
 ```
 cargo build --target wasm32-wasi --release
 ```
