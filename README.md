@@ -5,7 +5,7 @@
 In this part, we are going to explore a few ways to build and run WASM.  
 This is just an introduction, and the hope is that it perks your interest, and most likely will lead to more questions, that we will attempt to find answers for as we go through this series.  
   
-If you saw the very first video of the first Blockchain series, [Series 1 - NEAR Blockchain Tutorial](https://github.com/elicorrales/blockchain-tutorials/blob/main/README.md#series-i---near-blockchain-tutorial-deploying-wasm), we research and decide it would be a good thing to learn Rust, Blochain (decentralized apps), and also WASM.  All of those are "general-purpose" and not "niche" technologies.  
+If you saw the very first video of the first Blockchain series, [Series 1 - NEAR Blockchain Tutorial](https://github.com/elicorrales/blockchain-tutorials/blob/main/README.md#series-i---near-blockchain-tutorial-deploying-wasm), we research and decide it would be a good thing to learn Rust, Blockchain (decentralized apps), and also WASM.  All of those are "general-purpose" and not "niche" technologies.  
 - The Rust programming language has many use-cases
 - As well as blockchain dApps programming (smart contract)
 - And so do programs written to run on WASM runtimes  
