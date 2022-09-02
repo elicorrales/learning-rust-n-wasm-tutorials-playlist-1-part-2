@@ -113,45 +113,47 @@ cargo build --target wasm32-wasi --release
 ```
 <br/>
     
-## Run Targets With Wasmedge  
+## Run Targets With Wasmedge, Wasmtime, Wasmer
+  
+#### Your Mileage Will Vary  
+  
 
-Let's try to run the ```wasm32-unknown-unknown``` target, with wasmedge:  
+### Wasmedge  
+  
 ```
-wasmedge ./target/wasm32-unknown-unknown/release/my-first-wasm-bin.wasm
+wasmedge <path/to/wasm-unk-unk/or/wasm-wasi/file>
 ```
+  
+Optionally, you can run like so:
+  
 ```
-[2022-08-29 20:38:19.114] [error] wasmedge runtime failed: wasm function not found, Code: 0x05
-[2022-08-29 20:38:19.114] [error]     When executing function name: "_start"
+wasmedge --reactor <path/to/wasm-unk-unk/or/wasm-wasi/file>  function_name <any params required>
 ```
   
 
-Now let's try to run the ```wasm32-wasi``` target:  
+### Wasmtime 
+  
 ```
-wasmedge ./target/wasm32-wasi/release/my-first-wasm-bin.wasm
+wasmtime <path/to/wasm-unk-unk/or/wasm-wasi/file>
 ```
+  
+Optionally, you can run like so:
+  
 ```
-Hello, world!
-```
-<br/>
-
-## Run Targets With Wasmtime 
-
-Let's try to run the ```wasm32-unknown-unknown``` target, with wasmedge:  
-```
-wasmedge ./target/wasm32-unknown-unknown/release/my-first-wasm-bin.wasm
-```
-```
-[2022-08-29 20:38:19.114] [error] wasmedge runtime failed: wasm function not found, Code: 0x05
-[2022-08-29 20:38:19.114] [error]     When executing function name: "_start"
+wasmtime <path/to/wasm-unk-unk/or/wasm-wasi/file> --invoke function_name <any params required>
 ```
   
 
-Now let's try to run the ```wasm32-wasi``` target:  
+### Wasmer
+  
 ```
-wasmedge ./target/wasm32-wasi/release/my-first-wasm-bin.wasm
+wasmer <path/to/wasm-unk-unk/or/wasm-wasi/file>
 ```
+  
+Optionally, you can run like so:
+  
 ```
-Hello, world!
+wasmer <path/to/wasm-unk-unk/or/wasm-wasi/file> -i function_name <any params required>
 ```
-<br/>
+  
 
