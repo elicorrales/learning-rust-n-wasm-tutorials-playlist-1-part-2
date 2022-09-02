@@ -156,4 +156,12 @@ Optionally, you can run like so:
 wasmer <path/to/wasm-unk-unk/or/wasm-wasi/file> -i function_name <any params required>
 ```
   
+## Inspect Targets With Wasmer  
+
+```
+wasmer inspect <path/to/wasm-unk-unk/or/wasm-wasi/file>
+```
+  
+Try the above and compare what you see with the wasm-wasi target vs the wasm-unk-unk.  
+  
 
