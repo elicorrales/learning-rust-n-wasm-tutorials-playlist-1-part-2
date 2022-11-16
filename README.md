@@ -1,5 +1,6 @@
 # Build, Run Hello World (and other simple functions)
   
+See [Here](https://github.com/elicorrales/learning-rust-n-wasm-tutorials/blob/main/README.md) for the overall document that refers to all the series.  
 ## Introduction  
 
 In this part, we are going to explore a few ways to build and run WASM.  
